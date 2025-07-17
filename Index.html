@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular Veterinaria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="titulo">Malla Curricular Medicina Veterinaria</h1>
+
+  <div class="malla-container">
+    <!-- Ejemplo: 10 semestres -->
+    <div class="semestre" id="semestre-1">
+      <h2>1° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo pendiente" onclick="mostrarInfo(this)" data-nombre="Anatomía I" data-creditos="10" data-prereq="Ninguno">Anatomía I</div>
+        <div class="ramo pendiente" onclick="mostrarInfo(this)" data-nombre="Química General" data-creditos="10" data-prereq="Ninguno">Química</div>
+        <div class="ramo pendiente" onclick="mostrarInfo(this)" data-nombre="Cálculo" data-creditos="10" data-prereq="Ninguno">Cálculo</div>
+        <div class="ramo pendiente" onclick="mostrarInfo(this)" data-nombre="Ética Veterinaria" data-creditos="5" data-prereq="Ninguno">Ética</div>
+      </div>
+    </div>
+
+    <!-- Puedes seguir duplicando esta estructura hasta el semestre 10 -->
+  </div>
+
+  <div class="info-box" id="info-box">
+    <span id="cerrar-info" onclick="cerrarInfo()">✖</span>
+    <h3 id="info-nombre"></h3>
+    <p><strong>Créditos:</strong> <span id="info-creditos"></span></p>
+    <p><strong>Prerrequisitos:</strong> <span id="info-prereq"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+crear archivo index.html con estructura de malla interactiva
